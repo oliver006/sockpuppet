@@ -8,7 +8,7 @@
 Did you ever wonder how **nytimes.com** pushes breaking news articles to the front page while you have it open in your browser? Well, I used my browser's developer tools to look at what's going one and it turns out, they don't periodically reload JSON data but use websockets to push new events directly to your browser ([see here](https://developer.mozilla.org/en-US/docs/WebSockets) for more information about websockets).<br>
 It's a system called `nyt-fabrik`, here are a few talks and presentations where they give some insight into the architecture: [search google for "nytimes fabrik websockets"](https://www.google.com/search?q=nytimes+fabrik+websockets). 
 
-There is example code, see [here for the Python code](blob/master/sockpuppet.py) and [here for the Golang example](blob/master/sockpuppet.go).
+There is example code, see [here for the Python code](sockpuppet.py) and [here for the Golang example](sockpuppet.go).
 
 <br>
 ### Cool, so how does it work?
@@ -213,7 +213,7 @@ type MessageBody struct {
 <br>
 ### Sweet but what do I do with this?
 
-Totally up to you. Send yourself an email or txt msg using Twilio or Plivo every time something happens. For example, I wrote a little app using the Plivo API to send breaking news txts, you can subscribe by texting `news` to <a href="tel:+17185771913">+1-718-577-1913</a> if you want to give it a try (but no guarantees for how long I'll keep the service up).<br>
+Totally up to you. Send yourself an email or txt msg using Twilio or Plivo every time something happens. 
 
 
 ### Cool, how do I run the examples?
