@@ -122,7 +122,7 @@ if msgBuf[0] == 'o' {
 	log.Printf("Sent cookie: %s\n", cookie)
 }
 ```
-and `randCookie()` lookslike this:
+and `randCookie()` looks like this:
 
 ```go
 func randCookie() string {
